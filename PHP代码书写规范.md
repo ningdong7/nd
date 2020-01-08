@@ -121,7 +121,7 @@ PHP 解析器在对文件进行解释的时候，会有性能提升。并且，�
     
     class MySQL
     {
-    	function fetchOne()
+        function fetchOne()
         {
             // ......
         }
