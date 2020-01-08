@@ -122,9 +122,9 @@ PHP 解析器在对文件进行解释的时候，会有性能提升。并且，�
     class MySQL
     {
     	function fetchOne()
-	    {
-		    // ......
-    	}
+        {
+            // ......
+        }
     }
     
 正确：
@@ -134,10 +134,10 @@ PHP 解析器在对文件进行解释的时候，会有性能提升。并且，�
     
     class MySQL
     {
-	    public function fetchOne()
-	    {
-		    // ......
-	    }
+        public function fetchOne()
+        {
+            // ......
+        }
     }
     
 ### 15、方法的参数有多个的时候，每个参数的逗号后面必须加个空格 ###
@@ -145,9 +145,9 @@ PHP 解析器在对文件进行解释的时候，会有性能提升。并且，�
      
     class Mysql extends ParentClass implements \PDO, \DB // 写一行
     {
-	    public getInfo ($name, $age, $gender = 1)
-	    {
-	    }
+        public getInfo ($name, $age, $gender = 1)
+        {
+        }
     }
     
 ### 16、当用到抽象(abstract)和终结(final)来做类声明时，它们必须放在可见性声明(public 还是protected还是private)的前面。而当用到静态(static)来做类声明时，则必须放在可见性声明的后面。 ###
@@ -156,14 +156,14 @@ PHP 解析器在对文件进行解释的时候，会有性能提升。并且，�
      
     abstract class ClassName
     {
-	    protected static $foo; // static 放后面
+        protected static $foo; // static 放后面
      
 	    abstract protected function zim(); // abstract 放前面
      
 	    final public static function bar() // final 放前面，static 放最后。
-	    {
-		    // 方法主体部分
-	    }
+        {
+            // 方法主体部分
+        }
     }
 
 ### 17、控制结构花括号、换行、空格等规范 ###
@@ -172,52 +172,52 @@ PHP 解析器在对文件进行解释的时候，会有性能提升。并且，�
 > 流程控制语句起始的花括号是不需要另起一行。
 
     if ($expr1) { // 左右空格
-	    // if body
+        // if body
     } elseif ($expr2) { // elesif 连着写
-    	// elseif body
+        // elseif body
     } else {
-    	// else body;
+        // else body;
     }
     
     switch ($expr) { // 左右空格
     case 0:
-    	echo 'First case, with a break'; // 对齐
-    	break; // 换行写break，也对齐。
+        echo 'First case, with a break'; // 对齐
+        break; // 换行写break，也对齐。
     case 1:
-    	echo 'Second case, which falls through';
-    	// no break
+        echo 'Second case, which falls through';
+        // no break
     case 2:
     case 3:
     case 4:
-    	echo 'Third case, return instead of break';
-    	return;
+        echo 'Third case, return instead of break';
+        return;
     default:
-    	echo 'Default case';
-    	break;
+        echo 'Default case';
+        break;
     }
     
     while ($expr) { // 左右空格
-    	// structure body
+        // structure body
     }
      
     do {
-    	// structure body; // 左右空格
+        // structure body; // 左右空格
     } while ($expr);
     
     for ($i = 0; $i < 10; $i++) { // 注意几个参数之间的空格
-    	// for body
+        // for body
     }
     
     foreach ($iterable as $key => $value) { // 还是空格问题
-    	// foreach body
+        // foreach body
     }
     
     try {
-    	// try body
+        // try body
     } catch (FirstExceptionType $e) { // 同样也是注意空格。
-    	// catch body
+        // catch body
     } catch (OtherExceptionType $e) {
-    	// catch body
+        // catch body
     }
 
 ### 18、类名必须与文件名一样 ###
@@ -253,9 +253,9 @@ PHP 解析器在对文件进行解释的时候，会有性能提升。并且，�
     
     class MySQL
     {
-	    public function fetchOne() {
+        public function fetchOne() {
     
-	    }
+        }
     }
     
 正确：
@@ -264,18 +264,18 @@ PHP 解析器在对文件进行解释的时候，会有性能提升。并且，�
     
     class MySQL
     {
-	    public function fetchOne() 
-	    {
+        public function fetchOne() 
+        {
 	    
-	    }
+        }
     }
     
 ### 25、直接在方法中写数组参数时格式如下 ###
     $object->callFunc([
-	    'userId'   => 1,
-    	'username' => 'sam',
-    	'age'  => 20,
-    	'sex'  => 'male'
+        'userId'   => 1,
+        'username' => 'sam',
+        'age'  => 20,
+        'sex'  => 'male'
     ]);
 
 ### 26、方法参数注释 ###
@@ -294,8 +294,8 @@ PHP 解析器在对文件进行解释的时候，会有性能提升。并且，�
      *
      * ------------------- eg:start ---------------------
      * $data = [
-	 *	 'username' => '用户账号,没有时传空字符串',
-	 *	 'age'  => '用户年龄,没有时传0',
+     *	 'username' => '用户账号,没有时传空字符串',
+     *	 'age'  => '用户年龄,没有时传0',
      * ];
      * ------------------- eg:end -----------------------
      *
