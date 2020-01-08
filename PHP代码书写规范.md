@@ -85,16 +85,16 @@ PHP 解析器在对文件进行解释的时候，会有性能提升。并且，�
 > PHP 的关键字，必须小写，boolean 值：true，false，null 也必须小写。下面的关键字，也必须小写：
 > 
 > '__halt_compiler', 'abstract', 'and', 'array', 'as', 'break', 'callable', 'case', 'catch', 'class', 'clone', 'const', 'continue', 'declare', 'default', 'die', 'do', 'echo', 'else', 'elseif', 'empty', 'enddeclare', 'endfor', 'endforeach', 'endif', 'endswitch', 'endwhile', 'eval', 'exit', 'extends', 'final', 'for', 'foreach', 'function', 'global', 'goto', 'if', 'implements', 'include', 'include_once', 'instanceof', 'insteadof', 'interface', 'isset', 'list', 'namespace', 'new', 'or', 'print', 'private', 'protected', 'public', 'require', 'require_once', 'return', 'static', 'switch', 'throw', 'trait', 'try', 'unset', 'use', 'var', 'while', 'xor'
-> 
+
 
 ### 12、继承(extends) 和实现(implement) 必须和 class name 写在一行，切花括号要换行写。 ###
-<?php
-namespace Lib\Databaes;
- 
-class Mysql extends ParentClass implements \PDO, \DB // 写一行
-{ // 换行写{
- 
-}
+    <?php
+    namespace Lib\Databaes;
+     
+    class Mysql extends ParentClass implements \PDO, \DB // 写一行
+    { // 换行写{
+     
+    }
 
 ### 13、成员属性访问修饰符必须显示声明不能省略 ###
 
