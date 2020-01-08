@@ -100,15 +100,15 @@ PHP 解析器在对文件进行解释的时候，会有性能提升。并且，�
 
 > 成员属性有三种访问修饰符：public、protected、private。不能使用老式的 var 来声音成员属性。
 
-<?php
-namespace Lib\Databaes;
- 
-class Mysql extends ParentClass implements \PDO, \DB // 写一行
-{
-public$foo  = null;
-private   $name = 'sam';
-protected $age  = '17';
-}
+    <?php
+    namespace Lib\Databaes;
+     
+    class Mysql extends ParentClass implements \PDO, \DB // 写一行
+    {
+	    public$foo  = null;
+	    private   $name = 'sam';
+	    protected $age  = '17';
+    }
 
 ### 14、成员方法访问修饰符必须显示声明不能省略 ###
 
